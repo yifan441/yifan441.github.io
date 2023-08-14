@@ -64,6 +64,7 @@ body {
   /* background image */
   background-image: url(landing\ gradient.png);
   background-repeat: no-repeat;
+  background-size: cover;
 
   /* Flex Container */
   display: flex;
