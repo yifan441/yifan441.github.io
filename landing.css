@@ -64,7 +64,7 @@ body {
   /* background image */
   background-image: url(cropped-gradient-background.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 
   /* Flex Container */
   display: flex;
