@@ -154,6 +154,18 @@ header {
   margin-top: 40px;
 }
 
+#landing-section > div > a {
+  font-size: 20px;
+  font-weight: 400;
+  text-underline-offset: 10px;
+  transition: color, text-decoration 0.4s ease;
+}
+
+#landing-section > div > a:hover {
+  text-decoration-color: rgba(0, 0, 0, 0.255);
+  color: rgba(0, 0, 0, 0.69);
+}
+
 /* || FOOTER */
 
 footer {
