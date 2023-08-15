@@ -153,15 +153,19 @@ header {
   font-weight: 400;
   margin-top: 40px;
 }
+#landing-section > div > p:nth-child(5) {
+  font-size: 20px;
+  font-weight: 400;
+}
 
-#landing-section > div > a {
+#landing-section > div > p > a {
   font-size: 20px;
   font-weight: 400;
   text-underline-offset: 10px;
   transition: color, text-decoration 0.4s ease;
 }
 
-#landing-section > div > a:hover {
+#landing-section > div > p > a:hover {
   text-decoration-color: rgba(0, 0, 0, 0.255);
   color: rgba(0, 0, 0, 0.69);
 }
