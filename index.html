@@ -3,71 +3,214 @@
   <head>
     <meta charset="utf-8" />
     <title>Yifan Tang &ndash; Portfolio</title>
-    <!-- <script src="" defer></script> -->
-    <link rel="stylesheet" href="temp.css" />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <script src="scripts/index.js" defer></script>
   </head>
   <body>
     <header>
       <div id="header-full-name-div">
-        <a href="">YIFAN TANG</a>
+        <a href=".">YIFAN TANG</a>
       </div>
       <nav id="header-nav">
-        <a href="">Work</a>
-        <a href="">About</a>
+        <a href="#work-section" class="js-scroll-link">Work</a>
+        <a href="about.html">About</a>
+        <a href="https://github.com/yifan441" target="_blank" rel="noopener">GitHub</a>
       </nav>
     </header>
 
     <main>
       <section id="landing-section">
         <div>
-          <p>Developer + Designer</p>
+          <p>Engineer && Designer</p>
           <p>Yifan Tang</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="35"
-            height="31"
-            viewBox="0 0 35 31"
-            fill="none"
-          >
-            <path
-              d="M30.7604 4.3589C29.9943 3.59241 29.0846 2.98437 28.0835 2.56953C27.0823 2.15468 26.0092 1.94116 24.9254 1.94116C23.8417 1.94116 22.7686 2.15468 21.7674 2.56953C20.7662 2.98437 19.8566 3.59241 19.0904 4.3589L17.5004 5.9489L15.9104 4.3589C14.3629 2.81136 12.264 1.94196 10.0754 1.94196C7.88687 1.94196 5.78796 2.81136 4.24042 4.3589C2.69288 5.90644 1.82349 8.00535 1.82349 10.1939C1.82349 12.3824 2.69288 14.4814 4.24042 16.0289L5.83042 17.6189L17.5004 29.2889L29.1704 17.6189L30.7604 16.0289C31.5269 15.2628 32.135 14.3531 32.5498 13.3519C32.9646 12.3507 33.1782 11.2776 33.1782 10.1939C33.1782 9.11017 32.9646 8.03706 32.5498 7.03587C32.135 6.03468 31.5269 5.12503 30.7604 4.3589Z"
-              stroke="#393636"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          <p>coming soon...</p>
-          <p>
-            in the mean time...
-            <a href="https://github.com/yifan441" target="_blank"
-              >@github</a
-            >
-          </p>
+          <img src="assets/icons/heart.svg" alt="heart" class="heart-icon" />
         </div>
-        <svg
+        <img
+          src="assets/icons/down-caret.svg"
           id="down-caret"
-          xmlns="http://www.w3.org/2000/svg"
-          width="60"
-          height="60"
-          viewBox="0 0 130 130"
-          fill="none"
-        >
-          <path
-            d="M22 51L65 78.041L108 51"
-            stroke="black"
-            stroke-width="4"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
+          class="js-scroll-link"
+          href="#work-section"
+          alt="down caret"
+        />
+      </section>
+      <section id="work-section">
+        <!-- TODO: add a scroll back to top button -->
+        <div class="word-divider-div">
+          <hr />
+          <span>EXPERIENCE</span>
+          <hr />
+        </div>
+        <div class="project">
+          <div class="project__image">
+            <img
+              src="assets/images/atlanta-fed-logo.jpg"
+              width="450"
+              height="450"
+              alt="Federal Reserve Bank of Atlanta Logo"
+            />
+            <img src="assets/images/mini-landing-gradient.png" class="mini-gradient" />
+          </div>
+          <div class="project__description">
+            <p>FRONTEND DEVELOPER INTERN</p>
+            <h1>Summer 2023 Internship with Atlanta Federal Reserve Web Team</h1>
+            <div class="attributes">
+              <div class="attribute-tag purple">FRONTEND DEVELOPMENT</div>
+              <div class="attribute-tag pink">UI/UX DESIGN</div>
+            </div>
+            <p>
+              Worked on their client-side website to design and integrate new pages into the site. Collaborated with
+              many cross-functional teams such as UI/UX designers, data scientists, and worked closely with stakeholders
+              to deliver products.
+            </p>
+            <!-- <a href="" class="view-project-btn">VIEW PROJECT</a> -->
+          </div>
+        </div>
+        <div class="word-divider-div">
+          <hr />
+          <span>PROJECTS</span>
+          <hr />
+        </div>
+        <div class="project right">
+          <div class="project__description">
+            <p>LA HACKS</p>
+            <h1>BioQuest - Nature classification app</h1>
+            <div class="attributes">
+              <div class="attribute-tag purple">REACT NATIVE</div>
+              <div class="attribute-tag purple">MOBILE APP</div>
+              <div class="attribute-tag purple">HACKATHON</div>
+              <div class="attribute-tag pink">UI/UX DESIGN</div>
+            </div>
+            <p>BioQuest is a mobile app available for iOS and Android that gamifies outdoor exploration.</p>
+            <a href="https://github.com/warrickhe/YAEW" rel="noopener" target="_blank" class="view-project-btn"
+              >VIEW PROJECT</a
+            >
+          </div>
+          <div class="project__image">
+            <img src="assets/images/project_bioquest.png" width="450" height="450" alt="Mockup of BioQuest app" />
+            <img src="assets/images/mini-landing-gradient.png" class="mini-gradient" />
+          </div>
+        </div>
+        <div class="project">
+          <div class="project__image">
+            <img src="assets/images/project_ourfridge.png" width="450" height="450" alt="Mockup of OurFridge app" />
+            <img src="assets/images/mini-landing-gradient.png" class="mini-gradient" />
+          </div>
+          <div class="project__description">
+            <p>HACK WITH A PRO (3RD PLACE)</p>
+            <h1>Our Fridge - Easy ingredient sharing amongst friends</h1>
+            <div class="attributes">
+              <div class="attribute-tag purple">REACT</div>
+              <div class="attribute-tag purple">HACKATHON</div>
+            </div>
+            <p>
+              An easy ingredient sharing website that allows users to share leftover ingredients with their friends
+              through a communal fridge.
+            </p>
+            <a href="https://github.com/hailenwashere/hackwapro" rel="noopener" target="_blank" class="view-project-btn"
+              >VIEW PROJECT</a
+            >
+          </div>
+        </div>
+        <div class="project right">
+          <div class="project__description">
+            <p>HACK ON THE HILL (BEST WEB AWARD)</p>
+            <h1>CafeHopper - Plan your next café hopping trip</h1>
+            <div class="attributes">
+              <div class="attribute-tag purple">REACT</div>
+              <div class="attribute-tag purple">HACKATHON</div>
+              <div class="attribute-tag pink">UI/UX DESIGN</div>
+            </div>
+            <p>
+              App for finding cafes and designing a cafe hopping route for people who love to explore new cafes and try
+              new drinks.
+            </p>
+            <a href="https://github.com/warrickhe/CafeHopper" rel="noopener" target="_blank" class="view-project-btn"
+              >VIEW PROJECT</a
+            >
+          </div>
+          <div class="project__image">
+            <img src="assets/images/projects_cafehopper.png" width="450" height="450" alt="Mockup of CafeHopper app" />
+            <img src="assets/images/mini-landing-gradient.png" class="mini-gradient" />
+          </div>
+        </div>
+        <div class="project">
+          <div class="project__image">
+            <img src="assets/images/project_projectflow.png" width="450" height="450" alt="Mockup of ProjectFlow app" />
+            <img src="assets/images/mini-landing-gradient.png" class="mini-gradient" />
+          </div>
+          <div class="project__description">
+            <p>PROJECT</p>
+            <h1>ProjectFlow - A smarter way to plan your projects</h1>
+            <div class="attributes">
+              <div class="attribute-tag purple">REACT</div>
+              <div class="attribute-tag purple">NODE</div>
+              <div class="attribute-tag purple">EXPRESS</div>
+              <div class="attribute-tag purple">MONGODB</div>
+              <div class="attribute-tag pink">UI/UX DESIGN</div>
+            </div>
+            <p>
+              Web app for organizing and streamlining user projects through AI-powered planning, progress visualization,
+              and task delegation.
+            </p>
+            <a href="https://github.com/yifan441/ProjectFlow" rel="noopener" target="_blank" class="view-project-btn"
+              >VIEW PROJECT</a
+            >
+          </div>
+        </div>
+        <!-- <div class="project right">
+          <div class="project__description">
+            <p>BRUINLABS STARTUP INCUBATOR</p>
+            <h1>LineUp - Find your community</h1>
+            <div class="attributes">
+              <div class="attribute-tag pink">UI/UX DESIGN</div>
+            </div>
+            <p>
+              App concept for college students to find friends and community in a new city after
+              graduation.
+            </p>
+            <a href="" class="view-project-btn">VIEW PROJECT</a>
+          </div>
+          <div class="project__image">
+            <img src="https://fakeimg.pl/450x450/D9D9D9/909090" />
+            <img src="assets/images/mini-landing-gradient.png" class="mini-gradient" />
+          </div>
+        </div> -->
       </section>
     </main>
+    <footer>
+      <p>Thanks for stopping by, let's chat!</p>
+      <div class="info-blocks">
+        <div>
+          <p>Contact Me</p>
+          <p>yifantang04@gmail.com</p>
+        </div>
+        <div>
+          <p>Connect</p>
+          <p>
+            <a
+              href="https://drive.google.com/file/d/1B1faExwahN-UI_M6HQO4Zd6vg0gzUHmi/view?usp=sharing"
+              target="_blank"
+              rel="noopener"
+              >Resume</a
+            >
+            | <a href="https://github.com/yifan441" target="_blank" rel="noopener">GitHub</a> |
+            <a href="https://www.linkedin.com/in/yifan-tang/" target="_blank" rel="noopener">LinkedIn</a>
+          </p>
+        </div>
+        <div>
+          <p>@2024 YIFAN TANG</p>
+          <p>html/css/js + figma</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

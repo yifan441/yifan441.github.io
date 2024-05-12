@@ -1,0 +1,245 @@
+/* || FOR TESTING PURPOSES ONLY */
+
+/* header {
+  border-style: dashed;
+  border-color: blue;
+}
+
+header > div,
+header > nav {
+  border-style: dashed;
+  border-color: green;
+}
+
+nav > a {
+  border-style: dashed;
+  border-color: yellow;
+}
+
+main {
+  border-style: dashed;
+  border-color: blue;
+}
+
+main > section {
+  border-style: dashed;
+  border-color: green;
+}
+
+#landing-section > div {
+  border-style: dashed;
+  border-color: yellow;
+}
+
+#landing-section > div > p {
+  border-style: dashed;
+  border-color: blue;
+}
+
+#landing-section > svg {
+  border-style: dashed;
+  border-color: yellow;
+} */
+
+/* footer {
+  border-style: dashed;
+  border-color: blue;
+} */
+
+/* || LANDING IMAGE */
+body {
+  background-image: url(/assets/images/landing-gradient.png);
+}
+
+/* || LANDING SECTION */
+
+#landing-section p {
+  margin: 0;
+  padding: 10px;
+}
+
+#landing-section .heart-icon {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+#landing-section > div > p:first-child {
+  font-size: 20px;
+  /* font-weight: 600; */
+}
+
+#landing-section > div > p:nth-child(2) {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+#down-caret {
+  position: absolute;
+  bottom: 0%;
+  cursor: pointer;
+}
+
+#landing-section > div > p:nth-child(4) {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 40px;
+}
+#landing-section > div > p:nth-child(5) {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#landing-section > div > p > a {
+  font-size: 20px;
+  font-weight: 400;
+  text-underline-offset: 10px;
+  transition: color, text-decoration 0.4s ease;
+}
+
+#landing-section > div > p > a:hover {
+  text-decoration-color: rgba(0, 0, 0, 0.255);
+  color: rgba(0, 0, 0, 0.69);
+}
+
+/* || WORK SECTION */
+
+#work-section {
+  padding-top: 50px;
+}
+
+.word-divider-div {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  max-width: 1600px;
+  margin: 0 auto 0 auto;
+  gap: 10px;
+}
+
+.word-divider-div > hr {
+  flex-grow: 1;
+  border: 0;
+  border-top: 3px solid #dadada;
+}
+
+.word-divider-div span {
+  color: #a5a5a5;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.project {
+  width: 85%;
+  max-width: 1250px;
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 auto 200px auto;
+  position: relative;
+}
+
+.word-divider-div + .project {
+  margin: 200px auto 200px auto;
+}
+
+.project__image {
+  position: relative;
+  overflow: visible;
+}
+
+.project__image > img {
+  border-radius: 10px;
+}
+
+.project .mini-gradient {
+  top: -240px; /* Adjust position as needed */
+  left: -250px; /* Adjust position as needed */
+  width: 900px; /* Adjust width as needed */
+  height: 900px; /* Adjust height as needed */
+}
+
+.right .mini-gradient {
+  left: -190px; /* Adjust position as needed */
+  width: 750px; /* Adjust width as needed */
+}
+
+.project__description {
+  width: 50%;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right .project__description {
+  padding-left: 30px;
+}
+
+.project__description > p:nth-of-type(1) {
+  margin: 0 0 15px 0;
+
+  color: #a5a5a5;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.25px;
+}
+
+.project__description > h1 {
+  margin: 0 0 25px 0;
+
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.project__description > p:nth-of-type(2) {
+  line-height: 1.7;
+}
+
+.attributes {
+  margin-bottom: 30px;
+}
+
+.attribute-tag {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  padding: 5px 15px;
+  margin: auto 10px 10px auto;
+
+  border-radius: 4px;
+
+  font-family: 'Open Sans';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.attribute-tag.purple {
+  color: #244ba2;
+  background: #d7dff3;
+}
+
+.attribute-tag.pink {
+  color: #c04b6e;
+  background: #efdde2;
+}
+
+.project__description > p:nth-of-type(2) {
+  margin: 0 0 30px 0;
+  font-size: 20px;
+}
+
+.view-project-btn {
+  font-size: 22px;
+  font-weight: 600;
+
+  transition: color, text-decoration 0.4s ease;
+}
+
+.view-project-btn:hover {
+  text-decoration-color: rgba(19, 52, 121, 0.5);
+  color: rgba(19, 52, 121, 0.69);
+}

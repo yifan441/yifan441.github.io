@@ -1,0 +1,76 @@
+/* || GENERAL */
+
+h1 {
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1.25px;
+}
+
+span {
+  background-color: rgba(204, 189, 248, 0.7);
+}
+
+/* || LANDING IMAGE */
+body {
+  background-image: url(/assets/images/about-gradient.png);
+}
+
+/* || HEADER */
+.about-link {
+  text-decoration: underline;
+}
+
+/* || ABOUT SECTION */
+
+.about-section {
+  width: 85%;
+  max-width: 1250px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 100px auto 350px auto;
+}
+
+.about__image {
+  position: relative;
+  overflow: visible;
+  z-index: 1;
+}
+
+.about__image > img {
+  border-radius: 10px;
+}
+
+.about-section .mini-gradient {
+  top: -50px;
+  left: -100px;
+  width: 900px;
+  height: 900px;
+}
+
+.about__description {
+  width: 650px;
+  padding: 5px 40px 40px 50px;
+
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.about__description > h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.about__description > p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* || SKILLS SECTION */
+
+.about__skills > h1 {
+  font-size: 25px;
+  text-align: center;
+}
